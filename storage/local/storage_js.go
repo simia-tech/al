@@ -30,7 +30,7 @@ func (s *Storage) Get(key string) (string, error) {
 	if item.Type() == js.TypeString {
 		return item.String(), nil
 	}
-	return "", fmt.Errorf("could not get [%s]", s.key(key))
+	return "", nil
 }
 
 func (s *Storage) Set(key, value string) error {
