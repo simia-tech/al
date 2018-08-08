@@ -1,4 +1,5 @@
 // +build js
+
 package local
 
 import (
